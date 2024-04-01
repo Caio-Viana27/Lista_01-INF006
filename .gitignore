@@ -3,6 +3,9 @@
 
 # pdf
 *.pdf
+*.in
+*.out
+
 
 # Object files
 *.o
