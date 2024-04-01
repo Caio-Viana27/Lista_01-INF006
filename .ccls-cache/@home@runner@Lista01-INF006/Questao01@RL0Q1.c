@@ -20,9 +20,9 @@ void print_array(Point array[], int length);
 int main() {
 
   FILE *file;
-  file = fopen("Questao01/L0Q1.in", "r");
+  file = fopen("L0Q1.in", "r");
   if (file == NULL) {
-    printf("Erro ao abrir o arquivo!");
+    printf("1Erro ao abrir o arquivo!\n");
     return 1;
   }
 
@@ -51,9 +51,9 @@ int main() {
     quicksort (points, j);
 
     FILE *saida;
-      saida = fopen("Questao01/L0Q1_TESTE.out", "a");
+    saida = fopen("L0Q1_TESTE.out", "a");
     if (file == NULL) {
-      printf("Erro ao abrir o arquivo!");
+      printf("Erro ao abrir o arquivo!\n");
       return 1;
     }
 
@@ -125,8 +125,6 @@ void quicksort_recursion (Point points[], int low, int high) {
 
 int partition(Point points[], int low, int high) {
 
-  /* int pivot = distanceZero(points, high); */
-  /* Point pivot = points[high]; */
   int i = low;
 
   for(int j = low; j < high; j++) {
